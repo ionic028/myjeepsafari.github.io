@@ -1,0 +1,157 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corbett National Park</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/jeeplg.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">CORBETT SAFARI SERVICES</a></li>
+            <li><a href="blog.html">OUR GALLERY</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- COntact us content -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.531287359339!2d78.77247161474119!3d29.53001844964528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a24ffffffffff%3A0x3017b72d3d253fd7!2sJim%20Corbett%20National%20Park!5e0!3m2!1sen!2sin!4v1658908495738!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Ranikhet Road,Ramnagar, Nanital</h5>
+              <p>Uttarakhand 244715,India</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+91 9528737996</h5>
+              <p>Monday to Sunday, Open 24hours</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>sonurawat306@gmail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your Name"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        MyJeepSafari.com is a travel and tourism portal, providing best-in-class
+        Jim Corbett packages for nature enthusiasts, corporates, families, and
+        educational groups who love to explore the lush greens of nature and
+        want to get the first-hand feel of Jim Corbett National Park. Our core
+        aim is to empower our customers to have single-pass access to such a
+        place, where they can have a one-stop solution to all of their travel
+        needs, be it booking hotels, jungle safaris, or adventure activities to
+        give a boost to the adrenalin in their bodies. Corbett Tourism, as the
+        name suggests, employs some of the best tour managers for a perfect Jim
+        Corbett trip. This exotic destination, Jim Corbett National Park, is
+        best for weekend backpackers, corporates, family holiday trips.
+      </p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+
+        <i class="fa fa-instagram"></i>
+      </div>
+
+      <p>Copyright 2022 © www.myjeepsafari.com. All rights reserved</p>
+    </section>
+
+    <!-- Javascript code  for Toggle Menu-->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

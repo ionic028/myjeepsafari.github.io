@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corbett National Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+        <section class="sub-header">
+
+            <nav>
+                <a href="index.html"><img src="images/jeeplg.png"></a>
+                <div class="nav-links" id="navLinks">
+
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">CORBETT SAFARI SERVICES</a></li>
+                        <li><a href="blog.html">OUR GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+     <h1>About Us</h1>    
+ </section>
+
+            <!-- about us content -->
+
+            <section class="about-us">
+
+                <div class="row">
+                <div class="about-col">
+                <h1>Jim Corbett National Park</h1>
+                <p>Corbett National Park, which is a part of the larger Corbett Tiger Reserve, a Project Tiger Reserve lies in the Nainital district of Uttarakhand. The magical landscape of Corbett is well known and fabled for its tiger richness. Established in the year 1936 as Hailey National Park, Corbett has the glory of being India's oldest and most prestigious National Park. It is also being honored as the place where Project Tiger was first launched in 1973. This unique tiger territory is best known as the father who gave birth of the Project Tiger in India to protect the most endangered species and the Royal of India called Tigers.
+                 Spans over an extent of 520 square kilometers, its whole area comprises of hills, marshy depressions, riverine belts, grasslands and large lake. It is among the few tiger reserves in India that allows overnight stays in the lap of the National Park. </p>
+                 <!-- Nature watch and wildlife viewing in the park is done in an open four wheeler Jeep and on elephant back. Sheltering a healthy population of tigers and rare species like Otters and the endemic fish eating crocodile, the national park is one of the most sought after destinations for the wildlife buffs. Dhikala, situated at the border of the extensive Patil Dun valley, is the most popular destination. -->
+                
+            <a href="blog.html" class="hero-btn red-btn">EXPLORE NOW</a>    
+            </div>
+
+            <div class="about-col">
+                
+                    <img class="mySlides" src="images/safari.jpeg">
+                    <img class="mySlides" src="images/elep.jpeg">
+                    <img class="mySlides" src="images/tigerpix.jpeg">
+                    <img class="mySlides" src="images/deer.jpeg">
+                    <img class="mySlides" src="images/snake.jpeg">
+                    <img class="mySlides" src="images/fox.JPG">
+                    <img class="mySlides" src="images/attack.JPG">
+                  </div>
+                  
+      </section>
+
+
+
+               
+
+
+
+               
+              
+
+
+
+
+                
+
+                 
+
+                          
+                        <!-- FOOTer -->
+
+                        <section class="footer">
+                            <h4> ZONES DETAILS</h4>
+                            <p>Jim Corbett National Park is the sole national park in India that offers night stay inside its Jungle</p>
+                           
+
+                            <p><b>Bijrani Safari Zone :</b> Bijrani Zone is very popular tourist's hub because of its abundant natural beauty and open grasslands. The entry gate of the zone is located at only 01 Km from Ramnagar city.
+                            </p>
+
+                            <p><b>Jhirna Safari Zone :</b>Jhirna is another important tourist zone in the Jim Corbett National park that is open for tourist round the year. Jhirna Gate is located at 16 km from Ramnagar city.</p>
+
+                            <p><b> Dhela Safari Zone :</b>Dhela is a new eco tourism zone in Corbett National Park included in tiger reserve zone in November 2014. This is the only area in the reserve's buffer zone open to tourists in CTR. The zone is retaining the attention of large number of tourist because of its wealthy flora and fauna, open throughout the year, located at an approximate distance of 13 Km from Ramnagar City.</p>
+
+                            <p><b>Dhikala Safari Zone :</b>Being the largest and most jungle-safarivaried zone in Corbett, Dhikala is famous for its abundant natural beauty as well as offering the best sight for exotic fauna. The entry gate is 18 km away from Ramnagar city. Night stay inside the Dhikala Tourism Zone is highly recommended for the hard core wildlife enthusiasts.</p>
+
+                                <p><b>Durga Devi Safari Zone :</b>Located on the north-eastern boundary of the Jim Corbett National Park, Durga Devi zone is the heaven on planet earth for those who are fond of bird watching. Entry gate is located at an approximate distance of 36 km from Ramnagar city.</p>
+
+                                    <p><b>Sitabani Buffer Zone :</b>Sitabani Zone doesn't fall under the Corbett Tiger Reserve area. If you are fond of serene ambiance of the natural beauty, must visit Sitabani area.</p>
+
+
+
+                            <div class="icons">
+                                <i class="fa fa-facebook"></i>
+                        
+                                <i class="fa fa-instagram"></i>
+                                
+                            </div>
+
+                            <p>Copyright 2022 © www.myjeepsafari.com. All rights reserved!</p>
+                        </section>
+
+
+        <!-- Javascript code  for Toggle Menu-->
+
+        <script>
+            var  navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+             navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+
+                navLinks.style.right = "-200px";
+            }
+
+
+            var myIndex = 0;
+                  carousel();
+                  
+                  function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 2000); 
+                  }
+        </script>
+        
+    
+</body>
+</html>

@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corbett National Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/jeeplg.png"></a>
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">CORBETT SAFARI SERVICES</a></li>
+                    <li><a href="blog.html">OUR GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2>Get Ready To See Amazing Experience In Jim Corbett National Park</h2>
+    </section>
+
+
+
+    <!-- blog page COntent  -->
+
+
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img class="mySlides" src="images/14.jpeg">
+                <img class="mySlides" src="images/elep.jpeg">
+                <img class="mySlides" src="images/tigerpix.jpeg">
+                <img class="mySlides" src="images/deer.jpeg">
+                <img class="mySlides" src="images/snake.jpeg">
+                <img class="mySlides" src="images/fox.JPG">
+                <img class="mySlides" src="images/attack.JPG">
+
+                <img class="mySlides" src="images/17.JPG">
+                <img class="mySlides" src="images/23.jpeg">
+                <img class="mySlides" src="images/24.jpeg">
+                <img class="mySlides" src="images/33.jpeg">
+                <img class="mySlides" src="images/12.jpeg">
+                <img class="mySlides" src="images/32.jpeg">
+                <img class="mySlides" src="images/gallery2.jpeg">
+                <img class="mySlides" src="images/gallery10.jpeg">
+                <img class="mySlides" src="images/18.JPG">
+                <img class="mySlides" src="images/36.jpeg">
+                <img class="mySlides" src="images/20.jpeg">
+                <img class="mySlides" src="images/gallery7.jpeg">
+                <img class="mySlides" src="images/cut.jpeg">
+                <img class="mySlides" src="images/34.jpeg">
+
+                <img class="mySlides" src="images/11.jpeg">
+                <img class="mySlides" src="images/16.jpeg">
+                <img class="mySlides" src="images/30.jpeg">
+                <img class="mySlides" src="images/cok.jpeg">
+                <img class="mySlides" src="images/25.jpeg">
+                <img class="mySlides" src="images/19.JPG">
+                <img class="mySlides" src="images/btiger.jpeg">
+
+
+
+                <h2>WildLife Photography Amazing Experience In Jim Corbett National Park <br>
+                    <h2>PIC CREDIT:MR.SONU RAWAT</h2>
+                    <h2> Contact No :- +91 9528737996</h2>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="campus">
+        <h1>WILDLIFE IN CORBETT NATIONAL PARK</h1>
+        <p>Book Jeep Safari Now</p>
+
+        <div class="row">
+
+            <div class="campus-col">
+                <img src="images/ddeer.jpg">
+                <div class="layer">
+                    <h3>DEER</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/tigeer.jpeg">
+                <div class="layer">
+                    <h3>TIGER</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/elephant.jpeg">
+                <div class="layer">
+                    <h3>ELEPHANT</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> MyJeepSafari.com is a travel and tourism portal, providing best-in-class Jim Corbett packages for nature
+            enthusiasts, corporates, families, and educational groups who love to explore the lush greens of nature and
+            want to get the first-hand feel of Jim Corbett National Park. Our core aim is to empower our customers to
+            have single-pass access to such a place, where they can have a one-stop solution to all of their travel
+            needs, be it booking hotels, jungle safaris, or adventure activities to give a boost to the adrenalin in
+            their bodies. Corbett Tourism, as the name suggests, employs some of the best tour managers for a perfect
+            Jim Corbett trip. This exotic destination, Jim Corbett National Park, is best for weekend backpackers,
+            corporates, family holiday trips.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+
+            <i class="fa fa-instagram"></i>
+
+        </div>
+
+        <p>Copyright 2022 © www.myjeepsafari.com. All rights reserved!</p>
+    </section>
+
+
+    <!-- Javascript code  for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+
+            navLinks.style.right = "-200px";
+        }
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+
+</body>
+
+</html>
